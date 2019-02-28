@@ -7,7 +7,7 @@
 }
 
 header {
-    background-color: #092238; 
+    background-color: #092238c0; 
     padding: 15px;
     position: fixed;
     width: 100%;
@@ -16,7 +16,6 @@ header {
 h1 {
     font-family: 'Montserrat', sans-serif;
     color:#3CA9D1;
-    background-color: #092238; 
     padding: 15px;
     display: inline-block;
 }
@@ -39,7 +38,6 @@ nav ul li a {
     font-family: 'Open Sans Condensed', sans-serif;
     text-align: center; 
     color: #C4C7D1;
-    background-color: #092238;
     padding: 15px;
     margin: 15px;
 }   
@@ -53,13 +51,14 @@ nav ul li a {
     position: absolute;
 }
 
-.menu li .submenu li{
+.menu li:hover .submenu{
     display: block;
 }
 
-.menu li:hover .submenu li{
+.menu li .submenu li{
     display: block;
-    position: relative;
+    width: 100px;
+    background-color: #092238c0;
 }
 
 
