@@ -6,6 +6,10 @@
     box-sizing: border-box; 
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 header {
     background-color: #092238c0; 
     padding: 15px;
@@ -61,15 +65,18 @@ nav ul li a {
     background-color: #092238c0;
 }
 
-
+.imagen1 img{
+    width: 100%;
+}
 main {
     font-family: 'Teko', sans-serif;
     text-align: center;
-    background-color: #32AFF2;
+    color: aquamarine;
+    background-color: #092238;
     border: 10px dotted aquamarine;
-    padding: 15px;
+    padding: 50px 100px;
     margin: auto;
-    width: 75%;
+    width:100%;
 }
 
 section {
@@ -78,9 +85,67 @@ section {
     background-color:#C1DFF0;
 }
 p {
-    font-family: 'Poiret One', cursive;
+    font-family: 'Special Elite', cursive;
 }
 
 .bio{
-    width: 50%;
+    width: 100%;
+    padding: 50px 100px;
+    text-align: center;
 }
+
+h2{
+    padding-bottom: 50px;
+    color: #3CA9D1;
+    font-family: 'Special Elite', cursive;
+}
+
+.discografia img {
+filter: grayscale(1);
+padding: 25px;
+}
+
+.discografia img:hover {
+    filter: grayscale(0);
+}
+
+/* boton scroll inicio */
+.subir {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: #092238c0;
+    border-radius: 50%;
+    text-align: center;
+
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+}
+
+.subir i {
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+    top: 13px;
+}
+
+/* MOBILE FIRST */
+
+@media screen and (max-width: 768px){
+    .contenedor{
+        width: 90%;
+        margin: auto;
+    }
+    header .contenedor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header .contenedor nav ul li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+    
+  }
+
